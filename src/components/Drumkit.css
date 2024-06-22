@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #0f172a, #334155);
+    
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: "Playwrite AU VIC", cursive;
+}
+
+.btn {
+    height: 155px;
+    width: 155px;
+    margin: 15px;
+    border: 8px solid white;
+    background-color: gray;
+    color: white;
+    font-size: 40px;
+    border-radius: 50%; 
+    text-shadow: 5px 3px 5px black;
+}
+
+.drum-keys {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    font-family: "Playwrite AU VIC", cursive;
+}
+
+.w {
+    background: url('../assets/ride.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.a {
+    background: url('../assets/floor-tom.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.s {
+    background: url('../assets/base.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.d {
+    background: url('../assets/hight-tom.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.j {
+    background: url('../assets/snare.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.k {
+    background: url('../assets/crash.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.l {
+    background: url('../assets/hit-hat.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        height: 140px;
+        width: 140px;
+        margin: 10px;
+        border: 8px solid white;
+        background-color: gray;
+        color: white;
+        border-radius: 50%; 
+        text-shadow: 5px 3px 5px black;
+    }
+
+    .drum-keys {
+        margin-top: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: "Playwrite AU VIC", cursive;
+    }
+}
