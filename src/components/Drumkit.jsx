@@ -8,6 +8,7 @@ import hightom from "./hightom.mp3";
 import hithat from "./hithat.mp3";
 import ride from "./ride.mp3";
 import snaredrum from "./snaredrum.mp3";
+import maracas from "./maracas.wav"
 
 function DrumKeys({ keyLabel, playSound, handleFlashing }) {
   return (
@@ -24,7 +25,7 @@ function DrumKeys({ keyLabel, playSound, handleFlashing }) {
 }
 
 function Drumkit() {
-  const DRUM_KEYS = ["w", "a", "s", "d", "j", "k", "l"];
+  const DRUM_KEYS = ["w", "a", "s", "d", "j", "i", "k", "l"];
 
   const playSound = (key) => {
     let audioSrc;
@@ -43,6 +44,9 @@ function Drumkit() {
         break;
       case 'j':
         audioSrc = snaredrum;
+        break;
+      case 'i':
+        audioSrc = maracas;
         break;
       case 'k':
         audioSrc = crash;

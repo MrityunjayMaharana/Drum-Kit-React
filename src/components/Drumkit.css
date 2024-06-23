@@ -8,16 +8,14 @@
 
 body {
     background: linear-gradient(to right, #0f172a, #334155);
-    
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
-    height: 60vh;
-    justify-content: space-between;
     justify-content: center;
     align-items: center;
 }
@@ -77,6 +75,12 @@ body {
     background-size: contain;
     background-position: center;
 }
+.i {
+    background: url('../assets/maracasimg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 .k {
     background: url('../assets/crash.png');
     background-repeat: no-repeat;
@@ -93,14 +97,15 @@ body {
 .pressed {
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
-  }
+}
+
 footer {
     text-align: center;
     position: fixed;
     bottom: 10px;
 }
 
-footer p{
+footer p {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -108,30 +113,78 @@ footer p{
     color: white;
 }
 
-@media (max-width: 600px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 120vh;
-        justify-content: space-between;
-        justify-content: center;
-        align-items: center;
+@media (max-width: 1024px) {
+    .btn {
+        height: 150px;
+        width: 150px;
+        font-size: 35px;
+        margin: 12px;
     }
+}
+
+@media (max-width: 768px) {
     .btn {
         height: 140px;
         width: 140px;
+        font-size: 30px;
         margin: 10px;
-        border: 8px solid white;
-        background-color: gray;
-        color: white;
-        border-radius: 50%; 
-        text-shadow: 5px 3px 5px black;
+    }
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .drum-keys {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
     }
 
+    .btn {
+        height: 110px;
+        width: 110px;
+        font-size: 25px;
+        margin: 8px;
+    }
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
     .drum-keys {
-        margin-top: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-        font-family: "Playwrite AU VIC", cursive;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        height: 90px;
+        width: 90px;
+        font-size: 20px;
+        margin: 6px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .drum-keys {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        height: 80px;
+        width: 80px;
+        font-size: 18px;
+        margin: 5px;
+    }
+    footer p {
+        font-size: 12px;
     }
 }
